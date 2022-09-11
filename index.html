@@ -38,7 +38,7 @@
     <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">hr@GlobalIt.com</a>
-        <i class="bi bi-phone-fill phone-icon"></i> +1 612 300 5700
+    <!--     <i class="bi bi-phone-fill phone-icon"></i> +1 612 300 5700 -->
       </div>
       <div class="cta d-none d-md-block">
         <a href="#about" class="scrollto">Global IT Technologies</a>
@@ -52,7 +52,9 @@
 
       <!-- <h1 class="logo"><a href="index.html">Global It Technologies</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-       <a href="index.html" class="logo"><img src="assets/img/logo/logo.png" alt="Global It Technologies" class="img-fluid"></a>
+       <a href="index.html" class="logo"><img src="assets/img/logo/logo.gif" alt="Global It Technologies" class="img-fluid"></a>
+      <!--  <video controls>Your browser does not support the &lt;video&gt; tag.
+       <source src="assets/img/logo/logo.mp4"/></video> -->
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -70,47 +72,63 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex justify-cntent-center align-items-center">
-    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+   <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">WE PROVIDE <span class="belowline">HIGH QUALITY SERVICES</span></h2>
-          <p class="animate__animated animate__fadeInUp"><p>ON TIME BY MEETING THE CLIENT REQUIREMENTS</p>
-          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">WE PROVIDE <span>HIGH QUALITY SERVICES</span></h2>
+                <p class="animate__animated animate__fadeInUp">ON TIME BY MEETING THE CLIENT REQUIREMENTS</p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Industry Practices</h2>
+                <p class="animate__animated animate__fadeInUp">In order to provide clients with specialised IT solutions, Global IT Technologies has developed expertise in the Project & Portfolio Management.</p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Services</h2>
+                <p class="animate__animated animate__fadeInUp">We provide a range of IT consulting services by leveraging our domain knowledge on latest Technologies.</p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
         </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-double-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-double-right" aria-hidden="true"></span>
+        </a>
+
       </div>
-
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Industry Practices</h2>
-          <p class="animate__animated animate__fadeInUp">In order to provide clients with specialised IT solutions, Global IT Technologies has developed expertise in the Project & Portfolio Management.</p>
-          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
-        </div>
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="carousel-item">
-        <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Services</h2>
-          <p class="animate__animated animate__fadeInUp">We provide a range of IT consulting services by leveraging our domain knowledge on latest Technologies.</p>
-          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
-        </div>
-      </div>
-
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
-      </a>
-
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
-      </a>
-
     </div>
   </section><!-- End Hero -->
+
+
+  
 
   <main id="main">
 
@@ -121,7 +139,7 @@
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
             <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <div class="icon"><i class="bi bi-eyeglasses"></i></div>
               <h4 class="title"><a href="">Insights</a></h4>
               <p class="description">In-house research and analysis division that focuses on deriving cutting edge insights that shape the world of work and help stakeholders take the right decisions.</p>
             </div>
@@ -129,7 +147,7 @@
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
               <h4 class="title"><a href="">Global</a></h4>
               <p class="description">As an organization we are capable to think globally and operate locally. Our ability to act glocal has assisted in making strong relations and collaborations with our client across the globe.
             </div>
@@ -137,7 +155,7 @@
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <div class="icon"><i class="bi bi-alarm"></i></div>
               <h4 class="title"><a href="">Time management?</a></h4>
               <p class="description">We have the process of planning and exercising conscious control of time spent on specific activities, especially to increase effectiveness, efficiency, and productivity.</p>
             </div>
@@ -156,38 +174,35 @@
       </div>
     </section><!-- End Icon Boxes Section -->
 
-    <!-- ======= About Us Section ======= -->
+    
+
+     <!-- ======= About Section ======= -->
     <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
+      <div class="container">
 
-        <div class="section-title">
-          <h2>About Us</h2>
-          <p>Digital technology is changing every area of human existence, new frontiers are being reached and there has been no better time than now to innovate. Never as a human race have we felt so connected by the power to create something new and tackle the global challenges we all face.</p>
-        </div>
-
-        <div class="row content">
+        <div class="row">
           <div class="col-lg-6">
-            <p>
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+            <h3>Global It Systems is a full services IT firm that partners with clients across industries including major business verticals, government sectors and education.</h3>
+            <p class="fst-italic">
               We are a continuous learning organization with strong interests in multiple industries where we use transformational thinking and leading edge technologies to solve real challenges that give our customers a competitive advantage.
             </p>
             <ul>
-              <li><i class="ri-check-double-line"></i> We value creativity, tenacity and solving problems in a cost effective and sustainable way</li>
-              <li><i class="ri-check-double-line"></i> Our customers benefit from our breadth of experiences, professional approach and the diversity of the thinking of our people.</li>
-              <li><i class="ri-check-double-line"></i> Our company believes in taking digital steps towards tackling problems we all face.
-
+              <li><i class="bi bi-check-circle"></i> We value creativity, tenacity and solving problems in a cost effective and sustainable way</li>
+              <li><i class="bi bi-check-circle"></i> Our customers benefit from our breadth of experiences, professional approach and the diversity of the thinking of our people.</li>
+              <li><i class="bi bi-check-circle"></i>Our company believes in taking digital steps towards tackling problems we all face.
 </li>
             </ul>
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">
             <p>
-              Our people are our greatest assets, we bring our hearts, heads and hands to all we do as we drive innovation forward and create new advantages.
+              We bring the strategies and the architectures that determine modern platforms forward, permitting you to create your Product Roadmap and to build technology improvement into your business. We build long-term trusted partnerships to create a world where lives are enriched through the implementation of our idea
             </p>
-            <a href="#" class="btn-learn-more">Learn More</a>
           </div>
         </div>
 
       </div>
-    </section><!-- End About Us Section -->
+    </section>
 
     <!-- ======= Technologies Section ======= -->
 
@@ -497,7 +512,7 @@
                 <p>
                   Involve in requirement gatherings and analyze to define functional specifications. Provide assistance with design, development and performance tuning. Design and architect ETL solutions as part of a cross-functional team. Follow change management process to resolve application defects to enhance the development. Assist System management. Troubleshoot and resolve production issues. Perform unit, Grid integration, testing and validate the results. Skills required: SSIS, Oracle, PL/SQL, Toad, Informatica Power Center, and UNIX. Master’s degree in Science, Technology, Engineering (any) with 1 year of experience in job offered or related occupation is required. Bachelor's degree in the above mentioned fields along with 5 years of experience in job offered or related occupation is acceptable in lieu of a Master's degree plus 1 year of experience. Any suitable combination of education, training or experience is acceptable. Work location: Woodbridge, NJ and various unanticipated locations throughout the U.S.
                 </p>
-                <a href="#" class="btn-learn-more">Apply Now</a>
+               <!-- <a href="#" class="btn-learn-more">Apply Now</a>  -->
               </div>
             </li>
 
@@ -518,7 +533,7 @@
                 <p>
                     Design, develop, test and document database web applications. Gather functional requirements and create technical design from functional requirements. Design and develop User interfaces. Prepare process flows, perform coding and test /debug programs. Develop conversion and system implementation plans. Coordinate with business users to perform integration test and user acceptance test. Skills required: JAVA, J2EE, Struts, Hibernate, WEBLOGIC, JSP, Oracle, ANT, Restful Web Services and Spring. Master’s degree in Science, Technology, Engineering or any related field with 1 year of experience in job offered or related occupation is required. Bachelor's degree in the above mentioned fields along with 5 years of experience in job offered or related occupation is acceptable in lieu of a Master's degree plus 1 year of experience. Any suitable combination of education, training or experience is acceptable. Work location: Woodbridge, NJ and various unanticipated locations throughout the U.S.
                 </p>
-                <a href="#" class="btn-learn-more">Apply Now</a>
+                 <!-- <a href="#" class="btn-learn-more">Apply Now</a>  -->
               </div>
             </li>
 
@@ -539,7 +554,7 @@
                 <p>
                   Involve in all phases of Software Development Life Cycle including analysis, design, integration, testing, and implementation. Gather functional and non functional requirements. Develop web applications and database design. Design and develop stored procedures, functions, and queries. Develop effective high quality code and conduct code reviews. Develop unit test cases to validate code. Create scripts. Perform debugging. Skills required: RPA, Automation Anywhere, JavaScript, HTML, JQuery, CSS, Ajax, Soap, and Rest. Master's degree in Science, Technology, Digital Sciences, Computer Applications or Engineering (any) with 1 year of experience in job offered or related occupation is required. Bachelor's degree in the above fields along with 5 years of experience in job offered or related occupation is acceptable in lieu of Master's degree plus 1 year of experience. Any suitable combination of education, training or experience is acceptable. Work location: Woodbridge, NJ and various unanticipated locations throughout the U.S.
                 </p>
-                <a href="#" class="btn-learn-more">Apply Now</a>
+                 <!-- <a href="#" class="btn-learn-more">Apply Now</a>  -->
               </div>
             </li>
 
@@ -560,7 +575,7 @@
                 <p>
                     Involve in all phases of Software Development Life Cycle including analysis, design, integration, testing, and implementation. Gather functional and non functional requirements. Develop web applications and database design. Design and develop stored procedures, functions, and queries. Develop effective high quality code and conduct code reviews. Develop unit test cases to validate code. Create scripts. Perform debugging. Skills required: Informatica, Oracle, XML, MS SQL, POSTGRESQL, Qlikview, JIRA, SSIS, and MS Visio. Master's degree in Science, Technology, Digital Sciences, Computer Applications or Engineering (any) with 1 year of experience in job offered or related occupation is required. Bachelor's degree in the above fields along with 5 years of experience in job offered or related occupation is acceptable in lieu of Master's degree plus 1 year of experience. Any suitable combination of education, training or experience is acceptable. Work location: Woodbridge, NJ and various unanticipated locations throughout the U.S.
                 </p>
-                <a href="#" class="btn-learn-more">Apply Now</a>
+                 <!-- <a href="#" class="btn-learn-more">Apply Now</a>  -->
               </div>
             </li>
 
@@ -581,7 +596,7 @@
                 <p>
                     Participate and evaluate business requirements. Define workflows and develop mapping. Design user interfaces and write queries. Design, develop, test models and components. Create data flow interface diagrams, tables, views, and indexes. Create use cases and functional test cases. Conduct testing and implementation. Maintain documentation and standards. Conduct performance improvements. Skills required: PL/SQL, SAS, SQL, Unix Software-SQL Developer, IBM Netezza, SAS Enterprise Guide, Data Warehousing. Master's degree in Science, Technology, or Engineering (any) with 1 year of experience in job offered or related occupation is required. Bachelor's degree in the above fields along with 5 years of experience in job offered or related occupation is acceptable in lieu of Master's degree plus 1 year of experience. Any suitable combination of education, training or experience is acceptable. Work location: Woodbridge, NJ and various unanticipated locations throughout the U.S.
                 </p>
-                <a href="#" class="btn-learn-more">Apply Now</a>
+                 <!-- <a href="#" class="btn-learn-more">Apply Now</a>  -->
               </div>
             </li>
 
@@ -602,7 +617,7 @@
                 <p>
                     Participate and evaluate business requirements. Define workflows and develop mapping. Design user interfaces and write queries. Design, develop, test models and components. Create data flow interface diagrams, tables, views, and indexes. Create use cases and functional test cases. Conduct testing and implementation. Maintain documentation and standards. Conduct performance improvements. Skills required: ASP.NET, ADO.NET, Javascript, Ajax, SQL Server, C#.NET. Master's degree in Science, Technology, or Engineering (any) with 1 year of experience in job offered or related occupation is required. Bachelor's degree in the above fields along with 5 years of experience in job offered or related occupation is acceptable in lieu of Master's degree plus 1 year of experience. Any suitable combination of education, training or experience is acceptable. Work location: Woodbridge, NJ and various unanticipated locations throughout the U.S.
                 </p>
-                <a href="#" class="btn-learn-more">Apply Now</a>
+                 <!-- <a href="#" class="btn-learn-more">Apply Now</a>  -->
               </div>
             </li>
 
@@ -623,7 +638,7 @@
                 <p>
                     Involve in complete Software Development Life Cycle (SDLC). Gather requirements from various stakeholders and perform critical analysis. Create design documents. Design and develop ETL strategies, database structures and shell scripts. Design, develop, test & implement ETL, CRM and Reporting application packages. Develop processes for extracting, integrating, loading, and transforming data. Write queries. Execute and test code. Develop packages, triggers, functions, and indexes. Create Data Objects, Models, and Mappings. Develop, implement, and support databases. Perform query optimization and performance tuning. Skills required: Informatica Power Center, Oracle ODI, Oracle OWB, SQL PL/SQL, DataStage, UNIX, Teradata, and Cognos. Master’s degree in Science, Technology, Engineering or any related field with 1 year of experience in job offered or related occupation is required. Bachelor's degree in the above mentioned fields along with 5 years of experience in job offered or related occupation is acceptable in lieu of a master's degree plus 1 year of experience. Any suitable combination of education, training or experience is acceptable. Work location: Woodbridge, NJ and various unanticipated locations throughout the U.S.
                 </p>
-                <a href="#" class="btn-learn-more">Apply Now</a>
+                 <!-- <a href="#" class="btn-learn-more">Apply Now</a>  -->
               </div>
             </li>
 
@@ -657,11 +672,11 @@
                 <p>hr@GlobalIt.com</p>
               </div>
 
-              <div class="phone">
+             <!--  <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
                 <p>+1 612 300 5700s</p>
-              </div>
+              </div> -->
 
             </div>
 
